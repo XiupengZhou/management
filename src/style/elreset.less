@@ -1,0 +1,88 @@
+// element 中组件样式重置
+
+.navbar {
+  .rightMenu {
+    .el-input {
+      width: 118px;
+
+      .el-input__inner {
+        height: 30px;
+        line-height: 30px;
+      }
+      .el-select__caret {
+        height: 30px;
+        line-height: 30px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.login {
+  .el-button + .el-button {
+    margin-left: 0;
+  }
+  .el-button--primary.is-plain {
+    background-color: #fff;
+  }
+  .el-button--primary.is-plain:focus,
+  .el-button--primary.is-plain:hover {
+    background: #fff;
+    color: var(--el-button-background-color);
+  }
+  .el-input__inner {
+    height: 34px;
+    line-height: 34px;
+  }
+  .inputError {
+    .el-input__inner {
+      border: 1px solid #dd6e73;
+    }
+  }
+
+  // 进度条
+  .el-progress-bar__outer {
+    border-radius: 0;
+    background-color: #ddd;
+  }
+  .el-progress-bar__inner {
+    background-color: var(--el-color-primary);
+    border-radius: 0;
+  }
+}
+.el-submenu .el-menu-item{
+    min-width: 100px;
+};
+
+.portal {
+  .el-menu {
+    border-right: none;
+  }
+  .el-sub-menu .el-menu-item {
+    min-width: 167px;
+  }
+
+  .el-sub-menu.is-active {
+    .el-sub-menu__title {
+      color: rgb(105, 179, 255) !important;
+
+      > i {
+        color: rgb(105, 179, 255) !important;
+      }
+    }
+  }
+
+  .toolsbar {
+    .cRight {
+      .el-dropdown {
+        margin: 0 10px;
+      }
+    }
+  }
+  .el-card__header {
+    padding: 0 20px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+  }
+}

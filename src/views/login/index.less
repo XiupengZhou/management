@@ -1,0 +1,166 @@
+.login {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .popup {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 378px;
+            padding: 38px 46.5px;
+            background: #fff;
+            color: #5c5a5a;
+
+            >img.lang {
+                width: 50px;
+                height: auto;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            >img.logo {
+                width: 140px;
+                height: auto;
+                align-self: center;
+            }
+
+            .inputGroup {
+                margin-top: 24px;
+
+                >h2 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .errInfo {
+                    color: #dd6e73;
+                    font-size: 12px;
+                    height: 22px;
+                    line-height: 22px;
+                }
+            }
+
+            .yanZhengGroup {
+                margin-top: 24px;
+
+                >h2 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .progressGroup {
+                    position: relative;
+
+                    .gundong {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(128, 128, 128, 0);
+
+                        @keyframes fontFlash {
+                            from {
+                                transform: translate(-120px, 0);
+                                opacity: 0.8;
+                            }
+
+                            to {
+                                transform: translate(20px, 0);
+                                opacity: 0;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            background: rgba(255, 255, 255, 0.562);
+                            border-radius: 50%;
+                            box-shadow: 0 0 12px #fff;
+                            animation: fontFlash 1s infinite;
+                        }
+
+                        >.iconfont {
+                            position: absolute;
+                            top: 0;
+                            bottom: -1px;
+                            left: 0;
+                            width: 52px;
+                            line-height: 42px;
+                            font-size: 26px;
+                            color: #dbdbdb;
+                            background-color: #fff;
+                            cursor: pointer;
+                            border: 1px solid #ddd;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .forgetPassword {
+                font-size: 12px;
+                text-decoration: underline;
+                color: inherit;
+
+                &:hover {
+                    color: #379aff;
+                }
+            }
+
+            .loginBtn,
+            .registerBtn {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        background: #fff;
+        color: #4f4d4d;
+
+        .seeed {
+            width: 116px;
+            height: auto;
+        }
+
+        .mcafee {
+            width: 75px;
+            height: auto;
+            margin: 0 42px;
+        }
+
+        .copyright {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 0 42px;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        >a {
+            font-size: 12px;
+        }
+    }
+}

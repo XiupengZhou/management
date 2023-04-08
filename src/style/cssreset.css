@@ -1,0 +1,42 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,input{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #4F4D4D;
+}
+
+input,button{
+    outline: none;
+    border: 1px solid #333;
+    background: #fff;
+}
+i{
+    font-style: normal;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", Sans-serif, Times, serif, "Times New Roman";
+    color: #4F4D4D;
+    min-width: 1200px;
+    min-height: 700px;
+    user-select: none;
+}
+
+
+
+
+
+
